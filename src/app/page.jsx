@@ -32,10 +32,10 @@ export default function Home() {
       <Notification messages={notifications} />
 
       {!gameStarted ? (
-        // <Form onStartGame={handleStartGame} />
-        <GameBoard players={players} noti={addNoti}/>
+        <Form onStartGame={handleStartGame} />
       ) : (
         <div className="game-layout">
+        <GameBoard players={players} noti={addNoti}/>
           <Timer></Timer>
         </div>
       )}
