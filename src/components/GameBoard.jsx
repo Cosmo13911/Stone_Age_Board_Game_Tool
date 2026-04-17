@@ -5,6 +5,12 @@ import styles from "@/styles/GameBoard.module.css";
 import Dice from "./Dice.jsx";
 import ScoreBoard from "@/components/Score.jsx";
 
+import woodImg from '../../public/images/wood.png';
+import foodImg from '../../public/images/food.png';
+import clayImg from '../../public/images/clay.png';
+import stoneImg from '../../public/images/stone.png';
+import goldImg from '../../public/images/gold.png';
+
 export default function GameBoard({ players, noti }) {
   const [diceResults, setDiceResults] = useState([]);
   const [totalPoints, setTotalPoints] = useState(0);
@@ -75,11 +81,11 @@ export default function GameBoard({ players, noti }) {
   };
 
   const resources = [
-    { name: "Food", img: "/images/food.png", div: 2 },
-    { name: "Wood", img: "/images/wood.png", div: 3 },
-    { name: "Clay", img: "/images/clay.png", div: 4 },
-    { name: "Stone", img: "/images/stone.png", div: 5 },
-    { name: "Gold", img: "/images/gold.png", div: 6 },
+    { name: "Food", img: foodImg.src, div: 2 },
+    { name: "Wood", img: woodImg.src, div: 3 },
+    { name: "Clay", img: clayImg.src, div: 4 },
+    { name: "Stone", img: stoneImg.src, div: 5 },
+    { name: "Gold", img: goldImg.src, div: 6 },
   ];
 
   return (

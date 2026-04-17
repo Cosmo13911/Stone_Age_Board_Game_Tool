@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // เพิ่มบรรทัดนี้
+  basePath: '/Stone_Age_Board_Game_Tool',
   images: {
-    unoptimized: false, // เพิ่มบรรทัดนี้เพื่อให้รูปภาพแสดงผลได้บน GitHub Pages
+    unoptimized: true, // จำเป็นมากสำหรับ GitHub Pages
   },
 };
 
