@@ -1,0 +1,65 @@
+/* src/components/Form/Form.module.css */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.textForm {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.playerRow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.inputName {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    min-width: auto;
+    width: 60vw;
+    max-width: 400px;
+}
+
+.inputName:focus {
+    outline: none;
+}
+
+.colorDropdown {
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.startBtn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #786323;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.startBtn:hover {
+    transform: scale(1.05);
+    background-color: #bd9e41;
+}

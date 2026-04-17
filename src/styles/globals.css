@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-image: url(https://www.yucata.de/netimages/games/StoneAge/spielplan.jpg);
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* แจ้งเตือนให้หมุนจอเมื่อเป็นแนวตั้ง */
+@media screen and (orientation: portrait) {
+    body::before {
+        content: "🔄 Please rotate your device to Landscape mode";
+        position: fixed;
+        inset: 0;
+        background: #2c1a0b;
+        color: white;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    main { display: none; } /* ซ่อนเนื้อหาเกมทั้งหมด */
+}

@@ -1,0 +1,50 @@
+.scoreContainer {
+  flex: 4;
+  border: 1px solid #ffffff;
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  min-height: 80px;
+}
+
+.playerScoreBox {
+  border: 1px solid #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.playerName {
+  font-size: clamp(12px, 1.2vw, 18px);
+  margin-bottom: 5px;
+}
+
+.currentScore {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.scoreInput {
+  width: 80%;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+/* สีชื่อผู้เล่นตามที่เลือก */
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: #ddd200;
+}
