@@ -27,7 +27,7 @@ export default function ScoreBoard({ players, noti }) {
             <p className={styles.currentScore}>{scores[index] || 0}</p>
             <input
               enterKeyHint="send"
-              type="number"
+              type="text"
               className={styles.scoreInput}
               placeholder="score"
               onKeyDown={(e) => {
