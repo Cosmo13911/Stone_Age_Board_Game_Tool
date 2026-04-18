@@ -28,8 +28,9 @@ export default function ScoreBoard({ players, noti }) {
             <input
               enterKeyHint="send"
               type="text"
+              inputMode="numeric"
               className={styles.scoreInput}
-              placeholder="score"
+              placeholder="Enter Player Score"
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   e.preventDefault();
