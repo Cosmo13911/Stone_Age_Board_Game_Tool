@@ -1,8 +1,9 @@
 .timeContainer {
-    position: fixed;
-    z-index: 1000;
-    bottom: 0;
-    right: 0;
-    background: rgb(255, 81, 0);
-    padding: 0.6vw;
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  right: 0;
+  background: #b6771d;
+  padding: 0.6vw;
+  font-size: clamp(0.5rem, 1.7vw, 1rem);
 }

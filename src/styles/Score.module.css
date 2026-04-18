@@ -17,7 +17,7 @@
 }
 
 .playerName {
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: clamp(18px, 2.5vw, 25px);
   margin-bottom: 5px;
 }
 
@@ -28,11 +28,12 @@
 }
 
 .scoreInput {
-  width: 80%;
+  width: 70%;
   text-align: center;
   color: black;
   font-size: 12px;
   padding: 5px 0;
+  height: 7vh;
 }
 
 /* สีชื่อผู้เล่นตามที่เลือก */
@@ -40,7 +41,7 @@
   color: red;
 }
 .blue {
-  color: blue;
+  color: rgb(82, 120, 255);
 }
 .green {
   color: green;
