@@ -33,10 +33,11 @@ export default function ScoreBoard({ players, noti }) {
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   e.preventDefault();
+                  e.stopPropagation();
                   handleAddScore(index, e.target.value);
                   const message = `Player: ${player.name} | input ${e.target.value} points`;
                   noti(message);
-                  e.target.value = ""; 
+                  e.target.value = "";
                   e.target.blur();
                 }
               }}
